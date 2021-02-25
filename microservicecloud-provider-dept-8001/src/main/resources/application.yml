@@ -28,3 +28,9 @@ eureka:
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true
+
+info:
+  app.name: ys-microservicecloud
+  company.name: www.ys.com
+  build.artifactId: @project.artifactId@
+  build.version: @project.version@
