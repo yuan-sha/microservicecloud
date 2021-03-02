@@ -10,6 +10,6 @@ public class MyselfRule {
 
     @Bean
     public IRule myRule(){
-        return new RandomRule(); //over write the default one
+        return new RadomRule_YS(); //over write the default one
     }
 }
