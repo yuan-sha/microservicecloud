@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.ys.service","com.ys"})
 @EnableEurekaClient
 @RibbonClient(name="MICROSERVICECLOUD-DEPT", configuration = MyselfRule.class)
 @EnableFeignClients("com.ys.service")
