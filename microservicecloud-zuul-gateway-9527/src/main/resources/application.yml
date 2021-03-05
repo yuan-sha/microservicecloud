@@ -18,3 +18,10 @@ info:
   company.name: www.ys.com
   build.artifactId: @project.artifactId@
   build.version: @project.version@
+
+zuul:
+  routes:
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+  ignored-services: "*"
+  prefix: /ys
